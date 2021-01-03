@@ -5,7 +5,8 @@ class Car {
     private int wheels;
 
     public Car(String name, int cylinders) {
-        this.name = name;
+        this.name = name; // safasdfasfdasdfasfdaf
+        
         this.engine = true;
         this.cylinders = cylinders;
         this.wheels = 4;
@@ -41,14 +42,24 @@ class Car {
     }
 }
 
+
 class Dodge extends Car {
     public Dodge() {
         super("Viper", 8);
     }
 
+    // TODO: 3.1.2021 г. dygggku
+
     @Override
     public void brake() {
         System.out.println("Dodge brake pulled.");
+    }
+
+    public void something() {
+        System.out.println();
+        System.out.println();
+// TODO: 3.1.2021 г. aaaaaaa
+
     }
 }
 
@@ -73,6 +84,8 @@ class Tesla extends Car {
         System.out.println("Tesla brake pulled.");
     }
 }
+
+
 
 public class Main {
     public static void main(String[] args) {
