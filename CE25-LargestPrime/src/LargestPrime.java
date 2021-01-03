@@ -1,0 +1,29 @@
+public class LargestPrime {
+
+    public static int getLargestPrime(int number){
+
+        int i;
+
+        if(number<=1){
+
+            return -1;
+
+        }
+
+        for(i=2;i<=number;i++){
+
+            if(number%i==0){
+                System.out.println("sequence");
+                number/=i;
+
+                i--;
+
+            }
+
+        }
+
+        return i;
+
+    }
+
+}
