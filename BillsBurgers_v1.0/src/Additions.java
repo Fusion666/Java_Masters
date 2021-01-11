@@ -1,11 +1,11 @@
 public class Additions {
-    private boolean lettuce;
-    private boolean tomato;
-    private boolean potatoes;
-    private boolean onion;
-    private boolean olives;
-    private boolean carrot;
-    private boolean cheese;
+    private boolean lettuce = false;
+    private boolean tomato = false;
+    private boolean potatoes = false;
+    private boolean onion = false;
+    private boolean olives = false;
+    private boolean carrot = false;
+    private boolean cheese = false;
 
 
     public Additions(boolean lettuce, boolean tomato, boolean potatoes, boolean onion,
@@ -20,31 +20,50 @@ public class Additions {
 
     }
 
-    public boolean isLettuce() {
-        return lettuce;
-    }
-
-    public boolean isTomato() {
-        return tomato;
-    }
-
-    public boolean isPotatoes() {
-        return potatoes;
-    }
-
-    public boolean isOnion() {
-        return onion;
-    }
-
-    public boolean isOlives() {
-        return olives;
-    }
-
-    public boolean isCarrot() {
-        return carrot;
-    }
-
-    public boolean isCheese() {
-        return cheese;
+    public double addedPrize() {
+        double addedPrize = 0;
+        double additionalPrice = 0.55;
+        int maxAdditions = 0;
+        if(lettuce) {
+            maxAdditions++;
+            addedPrize += additionalPrice;
+        }
+        if(tomato) {
+            maxAdditions++;
+            addedPrize += additionalPrice;
+        }
+        if(potatoes) {
+            maxAdditions++;
+            addedPrize += additionalPrice;
+        }
+        if(onion) {
+            maxAdditions++;
+            addedPrize += additionalPrice;
+            if(maxAdditions > 3) {
+                return addedPrize;
+            }
+        }
+        if(olives) {
+            maxAdditions++;
+            addedPrize += additionalPrice;
+            if(maxAdditions > 3) {
+                return addedPrize;
+            }
+        }
+        if(carrot) {
+            maxAdditions++;
+            addedPrize += additionalPrice;
+            if(maxAdditions > 3) {
+                return addedPrize;
+            }
+        }
+        if(cheese) {
+            maxAdditions++;
+            addedPrize += additionalPrice;
+            if(maxAdditions > 3) {
+                return addedPrize;
+            }
+        }
+        return addedPrize;
     }
 }
