@@ -1,15 +1,19 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
 public class Additions {
-    private boolean lettuce = false;
-    private boolean tomato = false;
-    private boolean potatoes = false;
-    private boolean onion = false;
-    private boolean olives = false;
-    private boolean carrot = false;
-    private boolean cheese = false;
+    private boolean lettuce;
+    private boolean tomato;
+    private boolean potatoes;
+    private boolean onion;
+    private boolean olives;
+    private boolean carrot;
+    private boolean cheese;
+    private double additionPrice = 0.55D;
 
-
-    public Additions(boolean lettuce, boolean tomato, boolean potatoes, boolean onion,
-                     boolean olives, boolean carrot, boolean cheese) {
+    public Additions(boolean lettuce, boolean tomato, boolean potatoes, boolean onion, boolean olives, boolean carrot, boolean cheese) {
         this.lettuce = lettuce;
         this.tomato = tomato;
         this.potatoes = potatoes;
@@ -17,53 +21,37 @@ public class Additions {
         this.olives = olives;
         this.carrot = carrot;
         this.cheese = cheese;
-
     }
 
-    public double addedPrize() {
-        double addedPrize = 0;
-        double additionalPrice = 0.55;
-        int maxAdditions = 0;
-        if(lettuce) {
-            maxAdditions++;
-            addedPrize += additionalPrice;
-        }
-        if(tomato) {
-            maxAdditions++;
-            addedPrize += additionalPrice;
-        }
-        if(potatoes) {
-            maxAdditions++;
-            addedPrize += additionalPrice;
-        }
-        if(onion) {
-            maxAdditions++;
-            addedPrize += additionalPrice;
-            if(maxAdditions > 3) {
-                return addedPrize;
-            }
-        }
-        if(olives) {
-            maxAdditions++;
-            addedPrize += additionalPrice;
-            if(maxAdditions > 3) {
-                return addedPrize;
-            }
-        }
-        if(carrot) {
-            maxAdditions++;
-            addedPrize += additionalPrice;
-            if(maxAdditions > 3) {
-                return addedPrize;
-            }
-        }
-        if(cheese) {
-            maxAdditions++;
-            addedPrize += additionalPrice;
-            if(maxAdditions > 3) {
-                return addedPrize;
-            }
-        }
-        return addedPrize;
+    public double getAdditionPrice() {
+        return this.additionPrice;
+    }
+
+    public boolean isLettuce() {
+        return this.lettuce;
+    }
+
+    public boolean isTomato() {
+        return this.tomato;
+    }
+
+    public boolean isPotatoes() {
+        return this.potatoes;
+    }
+
+    public boolean isOnion() {
+        return this.onion;
+    }
+
+    public boolean isOlives() {
+        return this.olives;
+    }
+
+    public boolean isCarrot() {
+        return this.carrot;
+    }
+
+    public boolean isCheese() {
+        return this.cheese;
     }
 }
