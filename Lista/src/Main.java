@@ -80,7 +80,7 @@ public class Main {
         System.out.print("Enter the grocery list item you would like to be found: ");
         String searchItem = scanner.nextLine();
         if (groceryList.onFile(searchItem)) {
-            System.out.println("Found " + searchItem + " in our grocery list on position: ");
+            System.out.println("Found " + searchItem );
         }
         else {
             System.out.println(searchItem + " is not in the shopping list.");
