@@ -49,12 +49,12 @@ public class Main {
 
     }
 
-    private static void play(LinkedList<Song> playlist) {
+    private static void play(LinkedList<Song> playList) {
         Scanner scanner = new Scanner(System.in);
         boolean quit = false;
         boolean forward = true;
-        ListIterator<Song> listIterator = playlist.listIterator();
-        if (playlist.size() == 0) {
+        ListIterator<Song> listIterator = playList.listIterator();
+        if (playList.size() == 0) {
             System.out.println("No songs in playlist");
             return;
         } else {
@@ -118,11 +118,21 @@ public class Main {
                     }
                     break;
                 case 4:
-                    printList(playlist);
+                    printList(playList);
                     break;
                 case 5:
                     printMenu();
                     break;
+                case 6:
+                    if (playList.size() > 0) {
+                        playList.remove();
+                        if (listIterator.hasNext()) {
+                            System.out.println("Now playing " + listIterator.next());
+                        } else if (listIterator.hasPrevious()) {
+                            System.out.println("Now playing " + listIterator.previous());
+                        }
+                        break;
+                    }
             }
         }
     }
