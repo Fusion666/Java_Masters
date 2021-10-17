@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LE-145_Packages(Challange-Exersise-onlyPackage):jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LE_145_Packages_Challange_Exersise_onlyPackage__jar</output-path>
+    <root id="archive" name="LE-145_Packages(Challange-Exersise-onlyPackage).jar">
+      <element id="module-output" name="LE-145_Packages(Challange-Exersise-onlyPackage)" />
+    </root>
+  </artifact>
+</component>
