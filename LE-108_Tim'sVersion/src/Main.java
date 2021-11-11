@@ -10,7 +10,7 @@ public class Main {
         startPhone();
         printActions();
         while (!quit) {
-            System.out.println("\nEnter action: (6 tho show available actions)");
+            System.out.println("\nEnter action: (6 to show available actions)");
             int action = scanner.nextInt();
             scanner.nextLine();
 
